@@ -1,0 +1,9 @@
+p {
+    color: orange;
+	background: slateblue;
+	font-weight: bold;
+	text-align: left;
+}
+h3 {
+	text-shadow: 0 0 3px #FF0000;
+}
