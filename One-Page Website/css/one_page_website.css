@@ -1,0 +1,11 @@
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.reservation form {
+    width: 70%;
+    border: 2px solid slategray; 
+    margin: 2% auto;
+    border-radius: 6px;
+}
