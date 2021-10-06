@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<style>
+
+@media video and (max-width: 600px) {
+    html {
+        background-color: red;
+    }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: blue;
+  }
+}
+
+</style>
+    </head>
+      <body>
+
+            <h2>Gaming</h2>
+            <p>Gaming on a PC:</p>
+
+         <div class="container">
+            <video autoplay muted loop> <source src="pexels-ron-lach-7859363.mp4" type="video/mp4"> </video>
+            <div class="centered">Fluid key movement on keyboard</div>
+         </div>
+
+        <p>By default, the background color of the document is "red". If the screen size is 992px or less, the color will change to "blue". If it is 600px or less, it will change to "red"</p>
+    
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form
+        action="https://formspree.io/f/xrgrdoob"
+        method="POST"
+    >
+    <label>
+        Your email:
+    <input type="email" name="_replyto">
+    </label>
+    <label>
+        Your message:
+    <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+    </form>
+
+    </body>
+</html>
