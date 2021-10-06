@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+		<style>
+		div .footer {
+			text-align: center;
+			font-weight: bold;
+		}
+
+		#americansnacks {
+		  border: 2px solid red;
+		  padding: 10px;
+		  border-radius: 25px;
+		}
+		
+		#non-americansnacks {
+		  border: 2px solid red;
+		  padding: 10px;
+		  border-radius: 50px 20px;
+		}
+		</style>
 	    <title>Best Snacks</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./css/one_page_website.css">
@@ -38,7 +56,7 @@
 				    <!-- PIC-CONTAINER 1 -->
 					<div>
 					    <div>
-						    <img src="./images/snacks/americansnacks_1.jfif" alt="This is an image of American Snacks.">
+						    <img src="./images/snacks/americansnacks_1.jfif" alt="This is an image of American Snacks." class="center">
 							<div>
 							    <h4>Click to Enlarge</h4>
 								<p>American Snacks.</p>
@@ -59,8 +77,8 @@
 					<!-- PIC-CONTAINER 2 -->
 					<div>
 					    <div>
-						    <img src="./images/snacks/non-americansnacks_1.jfif" alt="This is an image of Japanese Snacks.">
-							<div>
+						    <img src="./images/snacks/non-americansnacks_1.jfif" alt="This is an image of Japanese Snacks." class="center">
+							<div class="centered">
 							    <h4>Click to Enlarge</h4>
 								<p>There are many really delicious Japanese Snacks.</p>
 							</div>
@@ -71,7 +89,7 @@
 					<!-- PIC-CONTAINER 3 -->
 					<div>
 					    <div>
-						    <img src="./images/snacks/non-americansnacks_2.jfif" alt="This is an image of Mexican Snacks.">
+						    <img src="./images/snacks/non-americansnacks_2.jfif" alt="This is an image of Mexican Snacks." class="center">
 							<div>
 							    <h4>Click to Enlarge</h4>
 								<p>There are many really delicious Mexican Snacks.</p>
@@ -119,11 +137,37 @@
 		      </div>
 	     </section>
 		 <!--END CONTACT -->
+
+		 <!-- TABLE -->
+		 <table id="topsnacks">
+			<tr>
+			  <th>American</th>
+			  <th>Japanese</th>
+			  <th>Mexican</th>
+			</tr>
+			<tr>
+			  <td>M&M's</td>
+			  <td>Pocky</td>
+			  <td>Pulparindo</td>
+			</tr>
+			<tr>
+			  <td>Most liked American snack</td>
+			  <td>Most liked Japanese snack</td>
+			  <td>Most like Mexican snack</td>
+			</tr>
+		  </table>
+		 <!-- /END TABLE -->
 		 
 		 <!-- FOOTER -->
+		<div class="footer">
+		 <footer>
+			 <p>Author: Sulaymaan Shahed</p>
+			 <p><a href="https://www.snacks.com/home">Snacks.com</a></p>
+		 </footer>
 		 <div>
 		     www.alltypesofsnacks.tasty &nbsp;|&nbsp; &copy; 2021
 		 </div>
+		</div>
 		 <!-- END FOOTER -->
 		 
 	 </body>
