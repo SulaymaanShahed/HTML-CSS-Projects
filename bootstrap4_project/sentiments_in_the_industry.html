@@ -12,9 +12,13 @@
   </head>
   <body>
 
+    <div class="alert alert-primary" role="alert"> <!-- alert component added -->
+      Don't forget to sign up for Weekly game news!
+    </div>
+
     <div class="container">
 
-
+      <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">    
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -35,6 +39,7 @@
               </form>
             </div>
           </nav>
+          <!-- End Navbar -->
 
           <div class="jumbotron jumbotron-fluid bg-info text-center">
             <div class="container">
@@ -43,6 +48,7 @@
             </div>
           </div>
 
+          <!-- Card Group -->
           <div class="card-group">
             <div class="card">
               <img class="card-img-top" src="./img/tomnook.jfif" alt="Animal Crossing:New Horizons image">
@@ -87,7 +93,9 @@
               </div>
             </div>
           </div>
+          <!-- End Card Group -->
 
+        <!-- About Author-->
         <div id="about">
           <div class="container">
             <div class="row">
@@ -125,8 +133,9 @@
             </div>
           </div>
         </div>
+        <!-- End About Author-->
 
-          <!-- Game Suggestions -->
+        <!-- Game Suggestions -->
         <div id="gamesuggest">
           <div class="container my-3">
             <div class="row">
@@ -162,7 +171,7 @@
             </div>
           </div>
         </div>
-          <!-- /End Game Suggestions -->
+        <!-- /End Game Suggestions -->
 
           <!-- Game of the Season -->
           <div id="gots">
@@ -201,16 +210,78 @@
           </div>
           <!-- /End Game of the Season -->
           
+          <!-- jumbotron heading -->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">
+              Game of the Year</h1>
+              <p class=:"lead">Check out our monthly deals...</p>
+              <!-- game deals -->
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly game deals!</button>
+              <!-- /game deals -->
+            </div>
+          </div>
+          <!-- end jumbtron heading -->
+
+
+          <!-- SIGN UP FORM-->
           <div class="text-center">
                 <form>
                   <h1 class="text-primary my-5">Sign up for our weekly newsletter!</h1>
                   <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="button" class="btn btn-secondary btn-info popover-dismiss"  data-container="body" data-toggle="popover" data-placement="top" data-content=
+                  "You have signed to receive game deals via email!">Sign up!
+                  </button>
                 </form>
           </div>
+          <!-- END SIGN UP FORM-->
 
+          <!-- form modal -->
+              <div class="modal fade" id="register">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Register to get game deals!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <form>
+                        <fieldset class="form-group">                          
+                            <label for="firstname">First Name:</label>
+                            <input type="text" id="firstname" class="form-control" placeholder="First Name...">
+                        </fieldset>
+                        <fieldset class="form-group">                          
+                          <label for="lastname">Last Name:</label>
+                          <input type="text" id="lastname" class="form-control" placeholder="Last Name...">
+                        </fieldset>
+                        <fieldset class="form-group">                          
+                          <label for="email">Email:</label>
+                          <input type="email" id="email" class="form-control" placeholder="Email...">
+                        </fieldset>
+                        <fieldset class="form-group">                          
+                          <label for="password">Password:</label>
+                          <input type="password" id="password" class="form-control" placeholder="Password...">
+                        </fieldset>
+                      </form>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <!-- /form modal -->
+
+          <!-- footer -->
           <div class="container my-5">
             <ul class="nav nav-inline">
               <li class="nav-item">
@@ -227,7 +298,7 @@
               </li>
             </ul>
           </div>
-
+          <!-- end footer -->
 
 
 
@@ -236,8 +307,16 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+
+      $('.alert').alert()
+    </script>
   </body>
 </html>
